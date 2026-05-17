@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikola Tesla — O Mago da Eletricidade</title>
+<link rel="shortcut icon" href="imagens/atomo-ilustracao-do-modelo-com-eletrons-e-neutrons-isolados_1284-53084.avif" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<canvas id="bg-canvas"></canvas>
+
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">N. Tesla</a>
+  <ul class="nav-links">
+    <li><a href="#vida">Vida</a></li>
+    <li><a href="#timeline">Linha do Tempo</a></li>
+    <li><a href="#inventions">Invenções</a></li>
+    <li><a href="#fisica">Física</a></li>
+    <li><a href="#ohm">Lei de Ohm</a></li>
+    <li><a href="#rivalry">Tesla vs Edison</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="#curiosidades">Curiosidades</a></li>
+    <li><a href="#referencias">Referências</a></li>
+  </ul>
+</nav>
+
+
+<section id="hero">
+  <p class="hero-eyebrow">10 de Julho de 1856 — 7 de Janeiro de 1943</p>
+  <h1 class="hero-title">
+    Nikola<br><em>Tesla</em>
+  </h1>
+  <p class="hero-sub">O homem que iluminou o mundo e sonhou com o futuro — décadas antes de ele chegar.</p>
+  <p class="hero-date">Inventor · Físico · Engenheiro Elétrico · Visionário</p>
+
+  <div class="hero-scroll">
+    <span>Rolar</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+
+<section id="vida">
+  <div class="section-inner">
+    <span class="section-tag reveal">Sobre o homem</span>
+    <h2 class="section-title reveal">A Mente<br>que mudou tudo</h2>
+    <div class="gold-rule reveal"></div>
+
+    <p class="reveal">Nikola Tesla (1856–1943) foi um engenheiro e inventor nascido no então Império Austríaco (atual Croácia), amplamente reconhecido por suas contribuições fundamentais para o desenvolvimento dos sistemas modernos de eletricidade. Sua atuação foi essencial para a consolidação da corrente alternada (CA), tecnologia que se tornou padrão global na transmissão de energia elétrica.</p>
+
+    <p class="reveal">Tesla iniciou seus estudos em engenharia elétrica e, ao longo de sua carreira, demonstrou grande habilidade na visualização e no desenvolvimento de sistemas complexos, sendo responsável por diversas invenções no campo do eletromagnetismo. Segundo Marc Seifer (1996), Tesla possuía uma capacidade incomum de conceber dispositivos completos mentalmente antes mesmo de construí-los, o que contribuiu significativamente para sua produtividade científica.</p>
+
+    <blockquote class="reveal">
+      Não me importa que tenham roubado minha ideia. O que me preocupa é que eles não tenham ideias próprias.
+      <cite>— Nikola Tesla</cite>
+    </blockquote>
+
+    <p class="reveal">Uma de suas maiores contribuições foi o desenvolvimento do sistema de corrente alternada, que se mostrou mais eficiente para transmissão de energia a longas distâncias quando comparado à corrente contínua defendida por Thomas Edison. De acordo com Jill Jonnes (2003), a adoção da corrente alternada marcou um ponto decisivo na chamada "Guerra das Correntes", consolidando o modelo utilizado até os dias atuais.</p>
+
+    <p class="reveal">Além disso, Tesla foi responsável pela criação da bobina de Tesla, um dispositivo capaz de gerar altas tensões e frequências elevadas, amplamente utilizado em experimentos relacionados à física da eletricidade e ao estudo de campos eletromagnéticos. Seus experimentos contribuíram para avanços na compreensão da transmissão sem fio de energia e comunicação, influenciando tecnologias futuras como o rádio.</p>
+
+    <p class="reveal">Outro aspecto relevante de seu trabalho foi a investigação de fenômenos elétricos de alta frequência e alta voltagem, fundamentais para o avanço da engenharia elétrica moderna. Segundo IEEE (2020), as contribuições de Tesla impactaram diretamente o desenvolvimento de sistemas elétricos industriais e de infraestrutura energética.</p>
+
+    <p class="reveal">Apesar de não ter obtido reconhecimento financeiro proporcional às suas contribuições durante sua vida, Tesla é hoje considerado um dos maiores nomes da física aplicada e da engenharia elétrica. Seu legado permanece presente em tecnologias contemporâneas e na própria estrutura dos sistemas de distribuição de energia elétrica utilizados mundialmente.</p>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="section-inner">
+    <span class="section-tag">Linha do tempo</span>
+    <h2 class="section-title">A jornada de<br>um gênio</h2>
+  </div>
+
+  <div class="timeline-container" style="max-width: 900px; margin: 4rem auto 0; padding: 0 2rem;">
+    <div class="timeline-line"></div>
+
+    <div class="timeline-item">
+      <div class="timeline-content right">
+        <div class="timeline-year">1856</div>
+        <div class="timeline-event">Nascimento</div>
+        <p class="timeline-desc">Nasce em Smiljan, Croácia, às meia-noite durante uma tempestade elétrica.</p>
+      </div>
+      <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+      <div class="timeline-empty"></div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-empty"></div>
+      <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+      <div class="timeline-content">
+        <div class="timeline-year">1882</div>
+        <div class="timeline-event">Motor de Indução CA</div>
+        <p class="timeline-desc">Concebe o motor de corrente alternada durante um passeio no parque em Budapeste.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content right">
+        <div class="timeline-year">1884</div>
+        <div class="timeline-event">Chega aos EUA</div>
+        <p class="timeline-desc">Imigra para Nova York com 4 centavos e uma carta para Thomas Edison.</p>
+      </div>
+      <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+      <div class="timeline-empty"></div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-empty"></div>
+      <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+      <div class="timeline-content">
+        <div class="timeline-year">1888</div>
+        <div class="timeline-event">Parceria com Westinghouse</div>
+        <p class="timeline-desc">Vende suas patentes de CA à Westinghouse, iniciando a "Guerra das Correntes".</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content right">
+        <div class="timeline-year">1893</div>
+        <div class="timeline-event">Exposição Universal</div>
+        <p class="timeline-desc">Ilumina a Exposição Mundial de Chicago com CA, derrotando Edison publicamente.</p>
+      </div>
+      <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+      <div class="timeline-empty"></div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-empty"></div>
+      <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+      <div class="timeline-content">
+        <div class="timeline-year">1899</div>
+        <div class="timeline-event">Laboratório Colorado Springs</div>
+        <p class="timeline-desc">Cria relâmpagos artificiais e experimentos com transmissão sem fio de energia.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content right">
+        <div class="timeline-year">1901</div>
+        <div class="timeline-event">Torre Wardenclyffe</div>
+        <p class="timeline-desc">Inicia a construção de sua torre para transmitir energia e comunicações pelo globo.</p>
+      </div>
+      <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+      <div class="timeline-empty"></div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-empty"></div>
+      <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+      <div class="timeline-content">
+        <div class="timeline-year">1943</div>
+        <div class="timeline-event">Morte e legado</div>
+        <p class="timeline-desc">Morre em Nova York. A Suprema Corte dos EUA reconhece suas patentes de rádio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INVENÇÕES -->
+<section id="inventions">
+  <div class="section-inner">
+    <span class="section-tag reveal">Descobertas e criações</span>
+    <h2 class="section-title reveal">As invenções que<br>moldaram o século XX</h2>
+    <p class="reveal">Com mais de 300 patentes registradas em todo o mundo, Tesla transformou a ciência de pura teoria em realidade elétrica.</p>
+  </div>
+
+  <div class="inventions-grid" style="max-width: 1100px; margin: 0 auto;">
+    <div class="invention-card reveal">
+      <span class="invention-icon">⚡</span>
+      <div class="invention-name">Corrente Alternada (CA)</div>
+      <p class="invention-desc">O sistema elétrico que alimenta residências, fábricas e cidades em todo o mundo. A CA vence a CC de Edison por poder ser transmitida a longas distâncias sem perda de energia.</p>
+      <div class="invention-year">c. 1888</div>
+    </div>
+    <div class="invention-card reveal">
+      <span class="invention-icon">🌀</span>
+      <div class="invention-name">Motor de Indução</div>
+      <p class="invention-desc">Motor elétrico que usa CA para gerar campo magnético rotativo, base de praticamente todos os motores elétricos modernos — de eletrodomésticos a veículos elétricos.</p>
+      <div class="invention-year">1888</div>
+    </div>
+    <div class="invention-card reveal">
+      <span class="invention-icon">🔊</span>
+      <div class="invention-name">Bobina de Tesla</div>
+      <p class="invention-desc">Transformador ressonante de alta frequência, capaz de gerar tensões altíssimas. Base das transmissões sem fio e usada em rádio, televisão e comunicações.</p>
+      <div class="invention-year">1891</div>
+    </div>
+    <div class="invention-card reveal">
+      <span class="invention-icon">📻</span>
+      <div class="invention-name">Rádio</div>
+      <p class="invention-desc">Tesla demonstrou transmissão sem fio antes de Marconi. Em 1943, a Suprema Corte americana reconheceu sua prioridade na invenção do rádio.</p>
+      <div class="invention-year">1897</div>
+    </div>
+    <div class="invention-card reveal">
+      <span class="invention-icon">🤖</span>
+      <div class="invention-name">Controle Remoto</div>
+      <p class="invention-desc">Demonstrou o primeiro barco controlado por rádio no Madison Square Garden em 1898, inaugurando a era da automação remota e dos drones.</p>
+      <div class="invention-year">1898</div>
+    </div>
+    <div class="invention-card reveal">
+      <span class="invention-icon">🌐</span>
+      <div class="invention-name">Transmissão de Energia Sem Fio</div>
+      <p class="invention-desc">Sonhou com um sistema global de distribuição de energia elétrica gratuita e sem fios. A Torre Wardenclyffe foi sua tentativa — e o mundo ainda tenta concluí-la.</p>
+      <div class="invention-year">1901</div>
+    </div>
+  </div>
+</section>
+
+<!-- FÍSICA -->
+<section id="fisica">
+  <div class="section-inner">
+    <span class="section-tag reveal">Ciência por trás do gênio</span>
+    <h2 class="section-title reveal">Os princípios físicos<br>de Tesla</h2>
+    <p class="reveal">As invenções de Tesla fundamentam-se em leis e princípios físicos concretos — da Lei de Ohm ao eletromagnetismo de Faraday. Compreendê-los é entender como Tesla enxergava o universo.</p>
+
+    <div class="fisica-grid">
+      <div class="fisica-card reveal">
+        <h3>Lei de Ohm</h3>
+        <div class="fisica-formula">V = R · I</div>
+        <p>A tensão (V) num condutor é igual ao produto da resistência (R) pela corrente elétrica (I). Essa lei governa todo circuito elétrico e foi central nas discussões sobre CA e CC.</p>
+      </div>
+      <div class="fisica-card reveal">
+        <h3>Lei de Faraday</h3>
+        <div class="fisica-formula">ε = −dΦ/dt</div>
+        <p>A força eletromotriz induzida é proporcional à variação do fluxo magnético no tempo. Princípio base dos motores e geradores de Tesla.</p>
+      </div>
+      <div class="fisica-card reveal">
+        <h3>Potência Elétrica</h3>
+        <div class="fisica-formula">P = V · I</div>
+        <p>A potência dissipada num circuito é o produto da tensão pela corrente. Tesla usou esse princípio para demonstrar a vantagem da CA em transmissões de longa distância.</p>
+      </div>
+      <div class="fisica-card reveal">
+        <h3>Ressonância Elétrica</h3>
+        <div class="fisica-formula">f = 1 / (2π√LC)</div>
+        <p>Frequência de ressonância de um circuito LC — base da Bobina de Tesla. Quando atingida, há transferência máxima de energia entre indutor e capacitor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULADORA LEI DE OHM -->
+<section id="ohm">
+  <div class="section-inner">
+    <span class="section-tag reveal">Ferramenta interativa</span>
+    <h2 class="section-title reveal">Calculadora<br>Lei de Ohm</h2>
+    <p class="reveal">Insira dois valores conhecidos do circuito e calcule o terceiro automaticamente — exatamente como Tesla faria.</p>
+  </div>
+
+  <div class="ohm-wrap reveal">
+    <div class="ohm-tabs">
+      <button class="ohm-tab active" onclick="switchTab('tensao')">Calcular Tensão (V)</button>
+      <button class="ohm-tab" onclick="switchTab('corrente')">Calcular Corrente (I)</button>
+      <button class="ohm-tab" onclick="switchTab('resistencia')">Calcular Resistência (R)</button>
+      <button class="ohm-tab" onclick="switchTab('potencia')">Calcular Potência (P)</button>
+    </div>
+
+    <!-- Calcular V -->
+    <div class="ohm-panel active" id="panel-tensao">
+      <div class="ohm-fields">
+        <div class="ohm-field">
+          <label>Resistência (Ω)</label>
+          <input type="number" id="v-r" placeholder="ex: 10" min="0">
+        </div>
+        <div class="ohm-field">
+          <label>Corrente (A)</label>
+          <input type="number" id="v-i" placeholder="ex: 2" min="0">
+        </div>
+      </div>
+      <button class="ohm-btn" onclick="calcTensao()">Calcular Tensão →</button>
+      <div class="ohm-error" id="err-tensao">⚠ Preencha todos os campos com valores positivos.</div>
+      <div class="ohm-result" id="res-tensao">
+        <div class="ohm-result-label">Tensão elétrica</div>
+        <div class="ohm-result-value" id="val-tensao">—</div>
+        <div class="ohm-result-formula">V = R × I</div>
+      </div>
+    </div>
+
+    <!-- Calcular I -->
+    <div class="ohm-panel" id="panel-corrente">
+      <div class="ohm-fields">
+        <div class="ohm-field">
+          <label>Tensão (V)</label>
+          <input type="number" id="i-v" placeholder="ex: 220" min="0">
+        </div>
+        <div class="ohm-field">
+          <label>Resistência (Ω)</label>
+          <input type="number" id="i-r" placeholder="ex: 10" min="0">
+        </div>
+      </div>
+      <button class="ohm-btn" onclick="calcCorrente()">Calcular Corrente →</button>
+      <div class="ohm-error" id="err-corrente">⚠ Preencha todos os campos com valores positivos.</div>
+      <div class="ohm-result" id="res-corrente">
+        <div class="ohm-result-label">Corrente elétrica</div>
+        <div class="ohm-result-value" id="val-corrente">—</div>
+        <div class="ohm-result-formula">I = V / R</div>
+      </div>
+    </div>
+
+    <!-- Calcular R -->
+    <div class="ohm-panel" id="panel-resistencia">
+      <div class="ohm-fields">
+        <div class="ohm-field">
+          <label>Tensão (V)</label>
+          <input type="number" id="r-v" placeholder="ex: 220" min="0">
+        </div>
+        <div class="ohm-field">
+          <label>Corrente (A)</label>
+          <input type="number" id="r-i" placeholder="ex: 2" min="0">
+        </div>
+      </div>
+      <button class="ohm-btn" onclick="calcResistencia()">Calcular Resistência →</button>
+      <div class="ohm-error" id="err-resistencia">⚠ Preencha todos os campos com valores positivos.</div>
+      <div class="ohm-result" id="res-resistencia">
+        <div class="ohm-result-label">Resistência elétrica</div>
+        <div class="ohm-result-value" id="val-resistencia">—</div>
+        <div class="ohm-result-formula">R = V / I</div>
+      </div>
+    </div>
+
+    <!-- Calcular P -->
+    <div class="ohm-panel" id="panel-potencia">
+      <div class="ohm-fields">
+        <div class="ohm-field">
+          <label>Tensão (V)</label>
+          <input type="number" id="p-v" placeholder="ex: 220" min="0">
+        </div>
+        <div class="ohm-field">
+          <label>Corrente (A)</label>
+          <input type="number" id="p-i" placeholder="ex: 2" min="0">
+        </div>
+      </div>
+      <button class="ohm-btn" onclick="calcPotencia()">Calcular Potência →</button>
+      <div class="ohm-error" id="err-potencia">⚠ Preencha todos os campos com valores positivos.</div>
+      <div class="ohm-result" id="res-potencia">
+        <div class="ohm-result-label">Potência elétrica</div>
+        <div class="ohm-result-value" id="val-potencia">—</div>
+        <div class="ohm-result-formula">P = V × I</div>
+      </div>
+    </div>
+
+    <!-- Triângulo da Lei de Ohm -->
+    <div class="ohm-diagram">
+      <div class="ohm-triangle">
+        <div class="ohm-tri-top">V</div>
+        <div class="ohm-tri-bot">R</div>
+        <div class="ohm-tri-bot">I</div>
+      </div>
+      <p class="ohm-diagram-label">V = R × I &nbsp;·&nbsp; I = V / R &nbsp;·&nbsp; R = V / I</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA VISUAL -->
+<section id="galeria">
+  <div class="section-inner">
+    <span class="section-tag reveal">Arquivo visual</span>
+    <h2 class="section-title reveal">A obra de Tesla<br>em imagens</h2>
+    <p class="reveal">Uma seleção dos locais, invenções e momentos que marcaram a trajetória do maior eletricista da história.</p>
+  </div>
+
+  <div class="galeria-grid" style="max-width: 1100px; margin: 0 auto; padding: 0 2rem;">
+    <div class="galeria-item reveal">
+      <span class="galeria-icon">🏭</span>
+      <div class="galeria-title">Laboratório em Nova York</div>
+      <p class="galeria-desc">O primeiro laboratório particular de Tesla em Manhattan, onde desenvolveu o motor de indução e a bobina Tesla.</p>
+      <div class="galeria-year">c. 1887–1895</div>
+    </div>
+    <div class="galeria-item reveal">
+      <span class="galeria-icon">⚡</span>
+      <div class="galeria-title">Bobina de Tesla em escala</div>
+      <p class="galeria-desc">Dispositivo capaz de gerar descargas elétricas de milhões de volts, criando os icônicos relâmpagos artificiais.</p>
+      <div class="galeria-year">1891</div>
+    </div>
+    <div class="galeria-item reveal">
+      <span class="galeria-icon">🌎</span>
+      <div class="galeria-title">Exposição de Chicago</div>
+      <p class="galeria-desc">A iluminação da Exposição Mundial com corrente alternada foi a prova pública definitiva da superioridade do sistema de Tesla.</p>
+      <div class="galeria-year">1893</div>
+    </div>
+    <div class="galeria-item reveal">
+      <span class="galeria-icon">🗼</span>
+      <div class="galeria-title">Torre Wardenclyffe</div>
+      <p class="galeria-desc">A torre de 57 metros em Long Island foi o projeto mais ambicioso de Tesla — um sistema mundial de transmissão de energia e comunicações sem fio.</p>
+      <div class="galeria-year">1901–1917</div>
+    </div>
+    <div class="galeria-item reveal">
+      <span class="galeria-icon">🌩️</span>
+      <div class="galeria-title">Colorado Springs</div>
+      <p class="galeria-desc">Laboratório onde Tesla criou relâmpagos artificiais de 40 metros e afirmou ter captado sinais de outra fonte além da Terra.</p>
+      <div class="galeria-year">1899–1900</div>
+    </div>
+    <div class="galeria-item reveal">
+      <span class="galeria-icon">🚢</span>
+      <div class="galeria-title">Barco Teleautomático</div>
+      <p class="galeria-desc">Demonstração pública do primeiro veículo controlado por rádio, no Madison Square Garden — décadas antes dos drones modernos.</p>
+      <div class="galeria-year">1898</div>
+    </div>
+  </div>
+</section>
+<section id="rivalry">
+  <div class="section-inner">
+    <span class="section-tag reveal">A batalha do século</span>
+    <h2 class="section-title reveal">Tesla<br>vs Edison</h2>
+    <p class="reveal">A "Guerra das Correntes" foi um dos conflitos científicos mais dramáticos da história. Dois gênios, duas visões radicalmente opostas do futuro da eletricidade.</p>
+  </div>
+
+  <div class="vs-container reveal" style="max-width: 980px; margin: 0 auto; padding: 0 2rem;">
+    <div class="vs-card tesla">
+      <h3>Tesla</h3>
+      <div class="vs-type">Corrente Alternada · CA</div>
+      <div class="vs-trait"><span class="vs-trait-icon">⚡</span><span>Corrente alternada — transmissível a longas distâncias</span></div>
+      <div class="vs-trait"><span class="vs-trait-icon">🧠</span><span>Visionário teórico, guiado pela imaginação pura</span></div>
+      <div class="vs-trait"><span class="vs-trait-icon">🤝</span><span>Apoiado por George Westinghouse</span></div>
+      <div class="vs-trait"><span class="vs-trait-icon">🏆</span><span>Venceu a batalha tecnológica — CA domina o mundo</span></div>
+      <div class="vs-trait"><span class="vs-trait-icon">💸</span><span>Morreu pobre, esquecido pelos financiadores</span></div>
+    </div>
+
+    <div class="vs-divider">
+      <div class="vs-label">VS</div>
+      <div class="vs-subtitle">Guerra das Correntes</div>
+    </div>
+
+    <div class="vs-card edison">
+      <h3>Edison</h3>
+      <div class="vs-type">Corrente Contínua · CC</div>
+      <div class="vs-trait"><span class="vs-trait-icon">🔌</span><span>Corrente contínua — eficiente apenas em curtas distâncias</span></div>
+      <div class="vs-trait"><span class="vs-trait-icon">💼</span><span>Pragmático, empresário e mestre da automação incremental</span></div>
+      <div class="vs-trait"><span class="vs-trait-icon">🏭</span><span>Financiou e dominou a infraestrutura elétrica de Nova York</span></div>
+      <div class="vs-trait"><span class="vs-trait-icon">📢</span><span>Tentou assombrar o público eletrocutando animais com CA</span></div>
+      <div class="vs-trait"><span class="vs-trait-icon">🌟</span><span>Morreu rico e celebrado como herói americano</span></div>
+    </div>
+  </div>
+
+  <div style="max-width: 900px; margin: 3rem auto 0; padding: 0 2rem;">
+    <blockquote class="reveal">
+      O presente é deles. O futuro, pelo qual eu realmente trabalhei, é meu.
+      <cite>— Nikola Tesla</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- LEGACY -->
+<section id="legacy">
+  <div class="section-inner">
+    <span class="section-tag reveal">Impacto duradouro</span>
+    <h2 class="section-title reveal">O legado de um<br>incompreendido</h2>
+
+    <div class="legacy-grid">
+      <div class="reveal">
+        <div class="fact-number" id="count-patents">0</div>
+        <div class="fact-label">Patentes registradas</div>
+        <p>Tesla registrou mais de 300 patentes em 26 países ao longo de sua vida. Muitas delas foram fundamentais para tecnologias que só se tornaram viáveis décadas depois.</p>
+      </div>
+      <div class="reveal">
+        <div class="fact-number" id="count-countries">0</div>
+        <div class="fact-label">Países com suas patentes</div>
+        <p>Suas invenções transcenderam fronteiras, sendo reconhecidas legalmente em praticamente todos os continentes habitados do planeta.</p>
+      </div>
+      <div class="reveal">
+        <div class="fact-number" id="count-years">0</div>
+        <div class="fact-label">Anos à frente do seu tempo</div>
+        <p>WiFi, carros elétricos, drones, redes elétricas inteligentes — Tesla imaginou tudo isso no início do século XX. O mundo levou décadas para alcançá-lo.</p>
+      </div>
+      <div class="reveal">
+        <p>A unidade do campo magnético no Sistema Internacional de Unidades (SI) se chama <strong style="color: var(--gold)">Tesla</strong> em sua homenagem. Seu nome também batizou uma das empresas mais inovadoras do século XXI.</p>
+        <p>Em 1943, meses após sua morte, a Suprema Corte dos EUA reconheceu que Tesla, e não Marconi, foi o verdadeiro inventor do rádio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="frases">
+  <div class="section-inner">
+    <span class="section-tag">Em suas próprias palavras</span>
+    <h2 class="section-title">Frases imortais<br>de Tesla</h2>
+
+    <div class="quotes-carousel">
+      <div class="quote-slide active">
+        <p class="quote-text">Se você quer descobrir os segredos do universo, pense em termos de energia, frequência e vibração.</p>
+      </div>
+      <div class="quote-slide">
+        <p class="quote-text">O dia em que tivermos a transmissão de energia sem fio será o dia em que o mundo finalmente terá paz.</p>
+      </div>
+      <div class="quote-slide">
+        <p class="quote-text">A ciência não é nada além de uma perversão de si mesma, a menos que tenha como objetivo final o melhoramento da humanidade.</p>
+      </div>
+      <div class="quote-slide">
+        <p class="quote-text">Meu cérebro é apenas um receptor. No universo existe um núcleo a partir do qual obtemos conhecimento, força e inspiração.</p>
+      </div>
+      <div class="quote-slide">
+        <p class="quote-text">Não me importo que tenham roubado minha ideia. O que me preocupa é que eles não tenham ideias próprias.</p>
+      </div>
+    </div>
+
+    <div class="quote-controls" id="quoteControls"></div>
+  </div>
+</section>
+
+<!-- CURIOSIDADES -->
+<section id="curiosidades">
+  <div class="section-inner">
+    <span class="section-tag reveal">Além dos livros didáticos</span>
+    <h2 class="section-title reveal">Fatos surpreendentes<br>sobre Tesla</h2>
+  </div>
+
+  <div class="curiosidades-list" style="max-width: 900px; margin: 0 auto; padding: 0 2rem;">
+    <div class="curiosidade-item reveal">
+      <div class="curiosidade-num">01</div>
+      <div class="curiosidade-text">
+        <h4>Dormia apenas 2 horas por noite</h4>
+        <p>Tesla afirmava precisar de apenas 2 horas de sono para funcionar plenamente — embora ocasionalmente dormisse até 8 horas "para compensar". Considerava o sono um desperdício de tempo criativo.</p>
+      </div>
+    </div>
+    <div class="curiosidade-item reveal">
+      <div class="curiosidade-num">02</div>
+      <div class="curiosidade-text">
+        <h4>Tinha aversão a brincos e cabelos femininos</h4>
+        <p>Tesla desenvolveu diversas fobias e obsessões ao longo da vida. Recusava-se a apertar a mão de pessoas, era obcecado com o número 3 e realizava ações em múltiplos de três.</p>
+      </div>
+    </div>
+    <div class="curiosidade-item reveal">
+      <div class="curiosidade-num">03</div>
+      <div class="curiosidade-text">
+        <h4>Falava 8 idiomas</h4>
+        <p>Tesla era fluente em sérvio, inglês, alemão, francês, italiano, latim, húngaro e tcheco. Sua inteligência linguística acompanhava seu brilhantismo científico.</p>
+      </div>
+    </div>
+    <div class="curiosidade-item reveal">
+      <div class="curiosidade-num">04</div>
+      <div class="curiosidade-text">
+        <h4>Quase destruiu um quarteirão em Nova York</h4>
+        <p>Em 1898, Tesla construiu um oscilador mecânico que, ao atingir a frequência ressonante do edifício onde trabalhava, causou tremores em toda a vizinhança. Ele destruiu o aparelho com um martelo para interromper o efeito.</p>
+      </div>
+    </div>
+    <div class="curiosidade-item reveal">
+      <div class="curiosidade-num">05</div>
+      <div class="curiosidade-text">
+        <h4>Ficou íntimo de um pombo</h4>
+        <p>Nos últimos anos de sua vida, Tesla desenvolveu um profundo vínculo afetivo com um pombo branco de fêmea que visitava seu quarto de hotel. Chegou a gastar mais de 2.000 dólares em cuidados veterinários para o animal.</p>
+      </div>
+    </div>
+    <div class="curiosidade-item reveal">
+      <div class="curiosidade-num">06</div>
+      <div class="curiosidade-text">
+        <h4>Previu smartphones e a internet em 1909</h4>
+        <p>Em entrevista ao New York Times, Tesla descreveu um sistema de comunicação global sem fio onde todos carregariam um dispositivo de bolso para acessar informações e se comunicar instantaneamente — uma descrição surpreendentemente precisa da internet móvel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERÊNCIAS -->
+<section id="referencias">
+  <div class="section-inner">
+    <span class="section-tag reveal">Fontes bibliográficas</span>
+    <h2 class="section-title reveal">Referências</h2>
+    <p class="reveal">As informações apresentadas neste site baseiam-se em fontes acadêmicas e publicações de referência sobre Nikola Tesla e a história da eletricidade.</p>
+
+    <div class="ref-list">
+      <div class="ref-item reveal">
+        <div class="ref-num">01</div>
+        <p class="ref-text"><strong>SEIFER, Marc J.</strong> <em>Wizard: The Life and Times of Nikola Tesla.</em> Secaucus: Citadel Press, 1996. Considerada a biografia mais completa e documentada sobre Tesla, com acesso a arquivos inéditos.</p>
+      </div>
+      <div class="ref-item reveal">
+        <div class="ref-num">02</div>
+        <p class="ref-text"><strong>JONNES, Jill.</strong> <em>Empires of Light: Edison, Tesla, Westinghouse, and the Race to Electrify the World.</em> New York: Random House, 2003. Relato detalhado da "Guerra das Correntes" e da consolidação da corrente alternada.</p>
+      </div>
+      <div class="ref-item reveal">
+        <div class="ref-num">03</div>
+        <p class="ref-text"><strong>IEEE — Institute of Electrical and Electronics Engineers.</strong> <em>Nikola Tesla: Electrical Pioneer and Inventor.</em> IEEE History Center, 2020. Disponível em: ieee.org. Análise técnica das contribuições de Tesla para a engenharia elétrica moderna.</p>
+      </div>
+      <div class="ref-item reveal">
+        <div class="ref-num">04</div>
+        <p class="ref-text"><strong>TESLA, Nikola.</strong> <em>My Inventions: The Autobiography of Nikola Tesla.</em> New York: Ben Johnston, 1919. Autobiografia publicada originalmente na revista Electrical Experimenter, na qual Tesla narra sua trajetória científica em primeira pessoa.</p>
+      </div>
+      <div class="ref-item reveal">
+        <div class="ref-num">05</div>
+        <p class="ref-text"><strong>CHENEY, Margaret.</strong> <em>Tesla: Man Out of Time.</em> New York: Dell Publishing, 1981. Obra biográfica de referência que examina o isolamento social e a incompreensão sofridos por Tesla durante sua vida.</p>
+      </div>
+      <div class="ref-item reveal">
+        <div class="ref-num">06</div>
+        <p class="ref-text"><strong>OHM, Georg Simon.</strong> <em>Die galvanische Kette, mathematisch bearbeitet.</em> Berlin: T. H. Riemann, 1827. Publicação original da Lei de Ohm, fundamento matemático dos circuitos elétricos estudados e aplicados por Tesla.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Tesla</div>
+  <div class="footer-date">10 Jul 1856 — 7 Jan 1943</div>
+  <div class="divider-ornament">✦ ✦ ✦</div>
+  <p class="footer-copy">Site educativo sobre Nikola Tesla — O Mago da Eletricidade</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
